@@ -60,7 +60,7 @@
 //import coil.transform.CircleCropTransformation
 //import coil.transform.GrayscaleTransformation
 //import com.example.coreuiimpl.model.UserProfile
-//import com.example.coreuiimpl.theme.MainViewModel
+//import com.example.coreuiimpl.viewmodel.MainViewModel
 //import com.example.coreuiimpl.theme.MyTheme
 //import com.example.coreuiimpl.model.userProfileList
 //

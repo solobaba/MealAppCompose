@@ -1,4 +1,4 @@
-package com.example.coreuiimpl.theme
+package com.example.coreuiimpl.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

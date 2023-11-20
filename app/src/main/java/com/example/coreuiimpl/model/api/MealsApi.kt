@@ -14,18 +14,11 @@ import retrofit2.http.GET
 class MealsWebService {
 
     private var api: MealsApi
-    private val interceptor: Interceptor? = null
 
     init {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://www.themealdb.com/api/json/v1/1/")
             .addConverterFactory(GsonConverterFactory.create())
-//            .client(OkHttpClient.Builder().apply {
-//                addInterceptor(HttpLoggingInterceptor(logger).apply {
-//                    level = HttpLoggingInterceptor.Level.BODY
-//                })
-//                interceptor?.let { addInterceptor(it) }
-//            }.build())
             .build()
 
         api = retrofit.create(MealsApi::class.java)
@@ -39,9 +32,5 @@ class MealsWebService {
     interface MealsApi {
         @GET("categories.php")
         suspend fun getMeals() : MealsCategoriesResponse
-    }
-
-    val logger =  HttpLoggingInterceptor.Logger {
-        Log.d("LogTrace", it)
     }
 }

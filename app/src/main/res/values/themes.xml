@@ -2,4 +2,9 @@
 <resources>
 
     <style name="Theme.CoreUIImpl" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.CoreUIImpl.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

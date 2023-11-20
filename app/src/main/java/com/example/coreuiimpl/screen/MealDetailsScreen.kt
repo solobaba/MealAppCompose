@@ -158,7 +158,6 @@ fun MealDetailsScreen(meal: MealResponse?) {
             }
         }
     }
-
 }
 
 enum class MealProfilePictureState(
